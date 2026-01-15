@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Compre a Plataforma Multimobi - Ecossistema Completo de Mobilidade e Chat Social</title>
 <meta name="description" content="Adquira uma plataforma completa de corridas, entregas, chat social e gestão com dashboard avançado. Concessão da licença por apenas R$ 35.000, com tecnologia pronta para escalar.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWTFYFMPB5"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "G-JWTFYFMPB5");
+</script>
 <style>
 * {
   margin: 0;
@@ -1282,6 +1289,9 @@ Quando você clicar no botão acima, vai falar diretamente comigo. Sem intermedi
       window.funnelEvents = funnelEvents;
     }
     trySendToEndpoint(event);
+    if (typeof gtag === "function") {
+      gtag("event", type, payload || {});
+    }
   }
   function trySendToEndpoint(event) {
     if (!analyticsEndpoint || typeof fetch !== "function") return;
@@ -1386,3 +1396,4 @@ Quando você clicar no botão acima, vai falar diretamente comigo. Sem intermedi
 </script>
 </body>
 </html>
+
