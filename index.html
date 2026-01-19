@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Compre a Plataforma Multimobi - Ecossistema Completo de Mobilidade e Chat Social</title>
-<meta name="description" content="Adquira uma plataforma completa de corridas, entregas, chat social e gestão com dashboard avançado. Concessão da licença por apenas R$ 35.000, com tecnologia pronta para escalar.">
+<title>Proposta de Sociedade - O Super App de Mobilidade Urbana</title>
+<meta name="description" content="Seja sócio de um aplicativo de mobilidade urbana completo. 4 modalidades + Chat 138. Baixo investimento e 50% de participação.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JWTFYFMPB5"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -321,9 +321,14 @@ a {
   border-radius: 999px;
   background: #38bdf8;
 }
-.grid-3 {
+.grid-2 {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
 .card {
@@ -338,6 +343,7 @@ a {
   margin-bottom: 10px;
   border: 1px solid rgba(63, 63, 70, 0.9);
   object-fit: cover;
+  aspect-ratio: 16/9;
 }
 .section-visual {
   width: 100%;
@@ -397,55 +403,40 @@ a {
   grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
   gap: 24px;
 }
-.pricing-box {
-  border-radius: 18px;
-  padding: 18px 16px;
-  background: radial-gradient(circle at top left, rgba(250, 204, 21, 0.08), rgba(24, 24, 27, 0.98));
-  border: 1px solid rgba(161, 161, 170, 0.9);
+.business-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
 }
-.pricing-label {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #fde68a;
-  margin-bottom: 6px;
+.role-box {
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(63, 63, 70, 0.8);
+    background: rgba(24, 24, 27, 0.6);
 }
-.pricing-value {
-  font-size: 26px;
-  font-weight: 800;
-  letter-spacing: -0.05em;
+.role-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #38bdf8;
+    text-transform: uppercase;
 }
-.pricing-value span {
-  font-size: 14px;
-  font-weight: 500;
-  color: #e4e4e7;
-  margin-left: 4px;
+.role-title.partner {
+    color: #22c55e;
 }
-.pricing-note {
-  margin-top: 4px;
-  font-size: 12px;
-  color: #e4e4e7;
+.cost-box {
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 16px;
+    background: radial-gradient(circle at center, rgba(249, 115, 22, 0.1), rgba(0,0,0,0));
+    border: 1px dashed rgba(249, 115, 22, 0.5);
+    text-align: center;
 }
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  margin-top: 12px;
-  font-size: 12px;
-}
-.pricing-item {
-  padding: 9px 9px;
-  border-radius: 12px;
-  background: rgba(24, 24, 27, 0.98);
-  border: 1px solid rgba(63, 63, 70, 0.9);
-}
-.pricing-item b {
-  display: block;
-  margin-bottom: 3px;
-  color: #fafafa;
-}
-.pricing-item span {
-  color: #d4d4d8;
+.cost-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fb923c;
 }
 .cta-panel {
   border-radius: 18px;
@@ -462,16 +453,6 @@ a {
   font-size: 13px;
   color: #e0f2fe;
   margin-bottom: 12px;
-}
-.cta-sub {
-  font-size: 11px;
-  color: #bbf7d0;
-  margin-top: 6px;
-}
-.cta-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 .btn-whatsapp {
   padding: 11px 18px;
@@ -491,19 +472,6 @@ a {
   filter: brightness(1.05);
   transform: translateY(-1px);
 }
-.btn-outline {
-  padding: 9px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(209, 250, 229, 0.85);
-  font-size: 12px;
-  font-weight: 500;
-  background: transparent;
-  color: #ecfdf5;
-  cursor: pointer;
-}
-.btn-outline:hover {
-  background: rgba(15, 118, 110, 0.7);
-}
 .whatsapp-icon {
   width: 18px;
   height: 18px;
@@ -513,39 +481,6 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 11px;
-}
-.feature-chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 8px;
-}
-.chip {
-  font-size: 11px;
-  padding: 4px 9px;
-  border-radius: 999px;
-  border: 1px solid rgba(82, 82, 91, 0.85);
-  background: rgba(24, 24, 27, 0.96);
-  color: #e4e4e7;
-}
-.faq {
-  display: grid;
-  gap: 10px;
-}
-.faq-item {
-  border-radius: 14px;
-  border: 1px solid rgba(39, 39, 42, 0.95);
-  background: rgba(9, 9, 11, 0.98);
-  padding: 10px 12px;
-}
-.faq-question {
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-.faq-answer {
-  font-size: 12px;
-  color: #d4d4d8;
 }
 .footer {
   padding: 18px 0 26px;
@@ -557,58 +492,19 @@ a {
   gap: 12px;
   flex-wrap: wrap;
 }
-.footer a {
-  color: #a5b4fc;
-}
-.flow-indicator {
-  font-size: 11px;
-  color: #a1a1aa;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.flow-indicator-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 999px;
-  background: #f97316;
-}
 @media (max-width: 900px) {
-  .hero {
-    padding-top: 26px;
-  }
-  .hero-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .hero-card {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  .section-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .grid-3 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .two-column {
-    grid-template-columns: minmax(0, 1fr);
-  }
+  .hero { padding-top: 26px; }
+  .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero-card { max-width: 400px; margin: 0 auto; }
+  .section-header { flex-direction: column; align-items: flex-start; }
+  .grid-4, .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .two-column { grid-template-columns: minmax(0, 1fr); }
+  .business-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
-  .grid-3 {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .btn-primary,
-  .btn-secondary,
-  .btn-whatsapp {
-    justify-content: center;
-    width: 100%;
-  }
+  .grid-4, .grid-2 { grid-template-columns: minmax(0, 1fr); }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .btn-primary, .btn-secondary, .btn-whatsapp { justify-content: center; width: 100%; }
 }
 </style>
 </head>
@@ -620,92 +516,61 @@ a {
 <div>
 <div class="badge">
 <span class="badge-dot"></span>
-<span>Concessão exclusiva da plataforma Multimobi</span>
+<span>Proposta de Sociedade</span>
 </div>
 <h1 class="hero-title">
-Já pensou em ter o seu <span class="highlight">próprio app de mobilidade</span> na sua cidade?
+O aplicativo de mobilidade urbana que vai <span class="highlight">dominar sua cidade</span>
 </h1>
 <p class="hero-subtitle">
-Já pensou em ser dono do seu próprio negócio, investindo relativamente pouco e com potencial de grande retorno financeiro mensal? Com a Multimobi você assume uma plataforma pronta com 4 modalidades principais — carros, mototáxi, motoboy e frete em caminhonete — e ainda um Chat Social 138 para as pessoas conversarem entre si. A primeira página do app tem uma área de propaganda que você pode vender ou trocar com restaurantes e comércios que indicarem o app, enquanto o cliente acompanha em <strong>tempo real</strong> a localização do motoboy que leva o pedido.
+Busco um sócio estratégico para operar o melhor aplicativo da região. A proposta é simples: <strong>eu cuido da tecnologia, você cuida do crescimento.</strong><br><br>
+Solução completa com 4 modalidades essenciais (Carro, Mototáxi, Frete, Entregas) e uma estratégia viral exclusiva: o <strong>Chat 138</strong>.
 </p>
 <div class="hero-metric-row">
 <div class="hero-metric">
-<b>Investimento inicial: R$ 35.000</b><br>
-Licença completa da plataforma já desenvolvida
+<b>Sociedade 50/50</b><br>
+Você dono de metade do negócio
 </div>
 <div class="hero-metric">
-<b>4 modalidades principais no mesmo app</b><br>
-Carros, mototáxi, motoboy e frete em caminhonete
+<b>Baixo Custo Operacional</b><br>
+~R$ 500/mês (Servidores) + Mkt
 </div>
 <div class="hero-metric">
-<b>Chat 138 e área de propaganda</b><br>
-Usuários conversam, veem anúncios e acompanham motoboy em tempo real
+<b>4 Serviços em 1 App</b><br>
+Solução completa para o usuário
 </div>
 </div>
 <div class="hero-actions">
 <button class="btn-primary" id="cta-hero-whatsapp">
-<span>Quero falar agora no WhatsApp</span>
+<span>Quero ser sócio agora</span>
 <span class="btn-pill-icon">→</span>
 </button>
-<button class="btn-secondary" data-scroll-target="#como-funciona">
+<button class="btn-secondary" onclick="document.getElementById('funcionalidades').scrollIntoView()">
 <span class="btn-pill-icon">?</span>
-<span>Ver como a plataforma funciona na prática</span>
+<span>Ver funcionalidades</span>
 </button>
 </div>
-<div class="hero-whatsapp-note">
-<span class="hero-whatsapp-dot"></span>
-<span>Atendimento 1:1 direto com o desenvolvedor para fechamento do negócio</span>
 </div>
-</div>
-<aside class="hero-card" aria-label="Resumo da oportunidade">
+<aside class="hero-card">
 <div class="hero-visual">
-<img src="images/hero-multimobi-app.png" alt="Mockup do app Multimobi com telas de corridas, entregas e chat social">
+<img src="images/hero-multimobi-app.png" alt="App Multimobi">
 </div>
 <div class="hero-card-header">
-<div class="hero-card-logo">Multimobi • Plataforma White Label</div>
-<div class="hero-card-pill">Concessão com tecnologia pronta</div>
+<div class="hero-card-logo">Multimobi • Partner</div>
+<div class="hero-card-pill">Oportunidade Única</div>
 </div>
 <div class="hero-card-body">
-<div class="hero-card-title">Você assume o negócio, não o risco de desenvolvimento</div>
+<div class="hero-card-title">Modelo de Negócio Pronto</div>
 <div class="hero-card-sub">
-Sistema completo em produção com backend Django, app de passageiro, app de motoboy e painel administrativo. Estrutura pensada para escalar e receber novas cidades, parceiros e modalidades.
+A plataforma já está desenvolvida e validada. Precisamos apenas da força de vendas local.
 </div>
 <div class="hero-card-grid">
 <div class="hero-card-item">
-<div class="hero-card-item-label">
-<span>Modalidades ativas</span>
-<b>Receitas múltiplas</b>
-</div>
-<div class="hero-card-item-value">Corridas, Entregas e Chat Social 138</div>
+<div class="hero-card-item-label"><span>Status</span><b>Pronto</b></div>
+<div class="hero-card-item-value">App Publicado</div>
 </div>
 <div class="hero-card-item">
-<div class="hero-card-item-label">
-<span>Modelo financeiro</span>
-<b>Você lidera</b>
-</div>
-<div class="hero-card-item-value">Margem ajustável + 2% para o criador</div>
-</div>
-<div class="hero-card-item">
-<div class="hero-card-item-label">
-<span>Gestão</span>
-<b>Controle total</b>
-</div>
-<div class="hero-card-item-value">Dashboard completo de usuários e receitas</div>
-</div>
-<div class="hero-card-item">
-<div class="hero-card-item-label">
-<span>Chat 138</span>
-<b>Engajamento</b>
-</div>
-<div class="hero-card-item-value">Canal social para atrair e reter usuários</div>
-</div>
-</div>
-<div class="hero-card-footer">
-<div class="hero-card-footer-text">
-Foco total em <strong>crescimento e monetização</strong>, não em código e bugs.
-</div>
-<div class="hero-card-footer-badge">
-Painel de administração completo incluso
+<div class="hero-card-item-label"><span>Tracking</span><b>Ao Vivo</b></div>
+<div class="hero-card-item-value">Tempo Real</div>
 </div>
 </div>
 </div>
@@ -713,687 +578,163 @@ Painel de administração completo incluso
 </div>
 </div>
 </header>
+
 <main>
-<section class="section" id="para-quem" data-section-id="para-quem">
+<!-- SEÇÃO 1: 4 MODALIDADES -->
+<section class="section" id="funcionalidades">
 <div class="container">
 <div class="section-header">
 <div>
-<div class="section-title">Para quem é essa plataforma?</div>
+<div class="section-title">A Solução Definitiva: 4 em 1</div>
 <p class="section-kicker">
-Ideal para o empreendedor que quer <strong>ganhar dinheiro com mobilidade, entregas e comunidade</strong> sem começar do zero.
+Para vencer a concorrência, oferecemos o que ninguém mais oferece em um único lugar. O cliente só precisa de um app para resolver 4 necessidades do dia a dia.
 </p>
 </div>
-<div class="flow-indicator">
-<span class="flow-indicator-dot"></span>
-<span>Você está no início do funil: entendimento do fit</span>
 </div>
-</div>
-<div class="grid-3">
+<div class="grid-4">
 <article class="card">
-<div class="card-tag">Perfil 1</div>
-<h2 class="card-title">Dono de negócio local que quer escalar</h2>
+<img src="images/modalidade-corridas.png" class="card-image" alt="Carro">
+<h2 class="card-title">Carro Particular</h2>
 <p class="card-body">
-Você já tem bar, restaurante, mercado, loja ou rede local e quer uma plataforma própria para controlar entregas, corridas e comunicação com sua base sem depender de apps de terceiros.
+Transporte de passageiros com segurança, estimativa de preço e rastreamento em tempo real. A alternativa local aos grandes apps.
 </p>
 </article>
 <article class="card">
-<div class="card-tag">Perfil 2</div>
-<h2 class="card-title">Empreendedor digital que quer um ativo real</h2>
+<img src="images/hero-multimobi-app.png" class="card-image" alt="Mototaxi">
+<h2 class="card-title">Mototáxi</h2>
 <p class="card-body">
-Você procura um negócio com tecnologia pronta, capaz de gerar fluxo de caixa recorrente, com múltiplas fontes de receita e espaço para crescer em novas cidades.
+Agilidade para o dia a dia. A modalidade mais popular em muitas cidades, agora com a segurança da tecnologia.
 </p>
 </article>
 <article class="card">
-<div class="card-tag">Perfil 3</div>
-<h2 class="card-title">Gestor que já atua com motoboys ou frota</h2>
+<img src="images/modalidade-entregas.png" class="card-image" alt="Entregas">
+<h2 class="card-title">Entregas de Moto</h2>
 <p class="card-body">
-Você já organiza corridas, fretes ou entregas e precisa de um sistema profissional com <strong>algoritmo de distribuição inteligente</strong>, acompanhamento em tempo real e dashboard de gestão.
+Delivery rápido de documentos e encomendas pequenas. O cliente acompanha o motoboy no mapa até a entrega.
+</p>
+</article>
+<article class="card">
+<img src="images/dashboard-multimobi.png" class="card-image" alt="Frete">
+<h2 class="card-title">Frete Pequeno</h2>
+<p class="card-body">
+Para mudanças pequenas e transporte de objetos maiores. Conectamos quem tem caminhonete com quem precisa transportar.
 </p>
 </article>
 </div>
 </div>
 </section>
-<section class="section" id="como-funciona" data-section-id="como-funciona">
+
+<!-- SEÇÃO 2: CHAT 138 (ESTRATÉGIA VIRAL) -->
+<section class="section" style="background: radial-gradient(circle at center, rgba(34, 197, 94, 0.05), transparent);">
 <div class="container">
-<div class="section-header">
-<div>
-<div class="section-title">Como a plataforma Multimobi funciona na prática</div>
-<p class="section-kicker">
-Um ecossistema completo com app de passageiro, app de motoboy, backend robusto em Django e painel de administração para você comandar o negócio.
-</p>
-</div>
-<span class="pill">
-<span class="pill-dot"></span>
-Arquitetura pronta: cliente, motoboy e painel adm conectados
-</span>
-</div>
 <div class="two-column">
 <div>
-<img class="section-visual" src="images/flow-multimobi.png" alt="Fluxo visual da plataforma Multimobi conectando passageiro, motoboy e painel administrativo">
+<div class="badge" style="margin-bottom: 12px; border-color: #22c55e; color: #4ade80;">Estratégia Exclusiva</div>
+<h2 class="section-title">O Retorno do "Chat 138"</h2>
+<p class="section-kicker" style="margin-bottom: 20px;">Marketing Viral e Retenção de Usuários</p>
+<p class="card-body" style="font-size: 15px; margin-bottom: 16px;">
+Lembra como as pessoas se conheciam antigamente pelo telefone 138? Trouxemos essa nostalgia de volta, mas em forma de chat moderno dentro do aplicativo.
+</p>
 <ul class="list">
 <li>
-<span class="list-bullet">1</span>
-<span>
-<span class="list-strong">O usuário final abre o app de passageiro.</span><br>
-Ele escolhe entre corridas, entregas ou Chat Social 138. Toda a parte de autenticação, tokens e conexão em tempo real já está implementada.
-</span>
+<span class="list-bullet">✓</span>
+<span><strong>Atração de Usuários:</strong> Muita gente vai baixar o app só pela curiosidade e nostalgia do chat.</span>
 </li>
 <li>
-<span class="list-bullet">2</span>
-<span>
-<span class="list-strong">O sistema calcula rotas, preços e tempo estimado.</span><br>
-O backend em Django conversa com serviços de mapas, aplica regras de negócio e entrega uma experiência profissional para o seu cliente.
-</span>
+<span class="list-bullet">✓</span>
+<span><strong>Comunidade Ativa:</strong> O chat mantém o usuário ativo no app mesmo quando não está pedindo corrida.</span>
 </li>
 <li>
-<span class="list-bullet">3</span>
-<span>
-<span class="list-strong">O algoritmo de distribuição escolhe o melhor motoboy.</span><br>
-Ele leva em conta proximidade, otimização de rota, histórico de performance e balanceamento de carga, para manter o sistema eficiente e rápido.
-</span>
-</li>
-<li>
-<span class="list-bullet">4</span>
-<span>
-<span class="list-strong">Você acompanha tudo pelo dashboard.</span><br>
-No painel você visualiza receitas, corridas, entregas, usuários, parceiros e alertas operacionais. É o comando central do seu negócio.
-</span>
-</li>
-<li>
-<span class="list-bullet">5</span>
-<span>
-<span class="list-strong">O Chat Social 138 mantém sua base ativa.</span><br>
-Enquanto as corridas geram faturamento, o chat cria comunidade, aumenta o tempo de uso do app e abre oportunidades de monetização com eventos e parceiros.
-</span>
+<span class="list-bullet">✓</span>
+<span><strong>Conversão:</strong> Uma vez dentro do app pelo chat, o usuário vira cliente das corridas e entregas.</span>
 </li>
 </ul>
 </div>
-<div class="card">
-<div class="card-tag">Resumo visual</div>
-<div class="card-body">
-Multimobi conecta três pilares em um único ecossistema:
-</div>
-<ul class="list">
-<li>
-<span class="list-bullet">A</span>
-<span><span class="list-strong">App do Cliente</span> para corridas, entregas e acesso ao Chat Social 138.</span>
-</li>
-<li>
-<span class="list-bullet">B</span>
-<span><span class="list-strong">App do Motoboy</span> com fluxo completo de aceitação, coleta, entrega e finalização.</span>
-</li>
-<li>
-<span class="list-bullet">C</span>
-<span><span class="list-strong">Painel Administrativo</span> para análise de receitas, gestão de usuários e parceiros.</span>
-</li>
-</ul>
-<div class="feature-chip-row">
-<span class="chip">Backend Django com WebSocket em tempo real</span>
-<span class="chip">Banco PostgreSQL preparado para escalar</span>
-<span class="chip">Integração com sistema de pagamentos</span>
-</div>
+<div>
+<img src="images/modalidade-chat.png" class="section-visual" alt="Tela do Chat 138" style="max-height: 400px; object-fit: contain; background: rgba(0,0,0,0.2);">
 </div>
 </div>
 </div>
 </section>
-<section class="section" id="modalidades" data-section-id="modalidades">
+
+<!-- SEÇÃO 3: PLANO DE NEGÓCIOS -->
+<section class="section" id="plano-negocios">
 <div class="container">
 <div class="section-header">
 <div>
-<div class="section-title">Todas as modalidades em um único app</div>
-<p class="section-kicker">
-Quanto mais opções você oferece, mais motivos o usuário tem para abrir o app todos os dias.
-</p>
+<div class="section-title">O Plano de Negócios</div>
+<p class="section-kicker">Transparência total na nossa parceria.</p>
 </div>
-<span class="pill">
-<span class="pill-dot"></span>
-Foco em aumentar ticket médio por usuário
-</span>
 </div>
-<div class="grid-3">
-<article class="card">
-<img class="card-image" src="images/modalidade-corridas.png" alt="Ilustração de corridas e transporte urbano pela Multimobi">
-<div class="card-tag">Modalidade 1</div>
-<h2 class="card-title">Corrida Normal e Corrida Rápida</h2>
-<p class="card-body">
-Fluxo completo de corridas com estados bem definidos (buscando motoboy, aceito, coletando, entregando, finalizado). Ideal para transporte urbano, clientes recorrentes e parcerias com empresas.
-</p>
-</article>
-<article class="card">
-<img class="card-image" src="images/modalidade-entregas.png" alt="Ilustração de entregas e motoboys em rota pela Multimobi">
-<div class="card-tag">Modalidade 2</div>
-<h2 class="card-title">Entregas com otimização inteligente</h2>
-<p class="card-body">
-Sistema de entregas pensado para aproveitamento máximo da frota. O algoritmo considera proximidade, rotas em andamento e histórico de performance para distribuir pedidos de forma inteligente.
-</p>
-</article>
-<article class="card">
-<img class="card-image" src="images/modalidade-chat.png" alt="Tela do Chat Social 138 dentro do app Multimobi">
-<div class="card-tag">Modalidade 3</div>
-<h2 class="card-title">Chat Social 138 – a cortesia que vira máquina de retenção</h2>
-<p class="card-body">
-Nova modalidade de chat social dentro do app passageiro. Usuários entram em salas em grupo, criam conversas privadas 1:1, interagem e permanecem conectados à sua marca mesmo fora das corridas.
-</p>
-</article>
-</div>
-<div class="two-column" style="margin-top: 22px;">
-<div class="card">
-<div class="card-tag">Por que o Chat 138 é um diferencial decisivo?</div>
-<div class="card-body">
-Enquanto outros apps disputam o usuário apenas na hora da corrida, você cria um <strong>ambiente social próprio</strong>, com:
-</div>
+
+<div class="business-grid">
+<!-- Partner Role -->
+<div class="role-box">
+<div class="role-title partner">Sua Parte (Sócio Operacional)</div>
 <ul class="list">
-<li>
-<span class="list-bullet">✓</span>
-<span>Salas em grupo com mensagens em tempo real e lista de usuários online.</span>
-</li>
-<li>
-<span class="list-bullet">✓</span>
-<span>Convites privados 1:1 para conversas mais pessoais e engajadas.</span>
-</li>
-<li>
-<span class="list-bullet">✓</span>
-<span>Possibilidade de gamificação, badges, rankings e eventos exclusivos.</span>
-</li>
-<li>
-<span class="list-bullet">✓</span>
-<span>Base ideal para vender espaços patrocinados, eventos, comunidades VIP e mais.</span>
-</li>
+<li><span class="list-bullet" style="background: rgba(34, 197, 94, 0.2); border-color: #22c55e; color: #22c55e;">1</span><span><strong>Marketing Local:</strong> Divulgar o app na cidade e redes sociais.</span></li>
+<li><span class="list-bullet" style="background: rgba(34, 197, 94, 0.2); border-color: #22c55e; color: #22c55e;">2</span><span><strong>Captação:</strong> Cadastrar motoristas e motoboys.</span></li>
+<li><span class="list-bullet" style="background: rgba(34, 197, 94, 0.2); border-color: #22c55e; color: #22c55e;">3</span><span><strong>Gestão Braçal:</strong> Resolver dia a dia com motoristas e parceiros.</span></li>
 </ul>
 </div>
-<div class="card">
-<div class="card-tag">Gatilho de exclusividade</div>
-<div class="card-body">
-Você terá uma plataforma única, com uma combinação rara no mercado:
-</div>
+
+<!-- My Role -->
+<div class="role-box">
+<div class="role-title">Minha Parte (Sócio Técnico)</div>
 <ul class="list">
-<li>
-<span class="list-bullet">+</span>
-<span><span class="list-strong">Mobilidade + Entregas + Chat Social</span> no mesmo ecossistema.</span>
-</li>
-<li>
-<span class="list-bullet">+</span>
-<span>Base tecnológica já validada com WebSocket, tokens, notificações e pagamentos.</span>
-</li>
-<li>
-<span class="list-bullet">+</span>
-<span>Espaço aberto para criar novas modalidades conforme sua visão de negócio.</span>
-</li>
+<li><span class="list-bullet">1</span><span><strong>Desenvolvimento:</strong> Manter o app rodando sem bugs.</span></li>
+<li><span class="list-bullet">2</span><span><strong>Servidores:</strong> Gestão da infraestrutura na nuvem.</span></li>
+<li><span class="list-bullet">3</span><span><strong>Inovação:</strong> Criar novas funcionalidades e atualizações.</span></li>
 </ul>
 </div>
 </div>
+
+<div class="cost-box">
+<h3>Estrutura de Custos & Ganhos</h3>
+<p style="color: #d4d4d8; font-size: 14px; margin-top: 8px;">
+O investimento mensal para manter a plataforma no ar é extremamente baixo para o potencial de retorno.
+</p>
+<div style="display: flex; justify-content: center; gap: 40px; margin-top: 20px; flex-wrap: wrap;">
+<div>
+<div class="cost-value">~R$ 500</div>
+<div style="font-size: 12px; color: #a1a1aa;">Custo Mensal Estimado<br>(Servidores + Infra)</div>
+</div>
+<div>
+<div class="cost-value" style="color: #22c55e;">50% / 50%</div>
+<div style="font-size: 12px; color: #a1a1aa;">Divisão dos Lucros<br>(Líquidos)</div>
+</div>
+</div>
+</div>
+
 </div>
 </section>
-<section class="section" id="dashboard" data-section-id="dashboard">
+
+<!-- CTA FINAL -->
+<section class="section">
 <div class="container">
-<div class="section-header">
-<div>
-<div class="section-title">Dashboard: o comando central do seu faturamento</div>
-<p class="section-kicker">
-Você terá acesso total ao painel administrativo para gerenciar usuários, receitas, alertas e parceiros sem depender de terceiros.
-</p>
-</div>
-<span class="pill">
-<span class="pill-dot"></span>
-Controle total: você decide quem entra, quanto cobra e como escala
-</span>
-</div>
-<div class="two-column">
-<div>
-<img class="section-visual" src="images/dashboard-multimobi.png" alt="Screenshot do dashboard administrativo da Multimobi com gráficos e lista de corridas">
-<ul class="list">
-<li>
-<span class="list-bullet">1</span>
-<span>
-<span class="list-strong">Analisar receitas em tempo real.</span><br>
-Visualize faturamento por período, modalidade, parceiro ou cidade. Tenha clareza sobre quais canais trazem mais dinheiro.
-</span>
-</li>
-<li>
-<span class="list-bullet">2</span>
-<span>
-<span class="list-strong">Excluir e bloquear usuários problemáticos.</span><br>
-Mantenha a qualidade da comunidade removendo perfis que prejudiquem a experiência geral ou causem risco operacional.
-</span>
-</li>
-<li>
-<span class="list-bullet">3</span>
-<span>
-<span class="list-strong">Adicionar e gerenciar parceiros estratégicos.</span><br>
-Cadastre empresas, restaurantes, mercados, lojas e profissionais que vão usar sua plataforma como canal de vendas e logística.
-</span>
-</li>
-<li>
-<span class="list-bullet">4</span>
-<span>
-<span class="list-strong">Enviar avisos e alertas segmentados.</span><br>
-Use o sistema de notificações para falar com grupos específicos (motoboys, passageiros VIP, parceiros, regiões) de forma cirúrgica.
-</span>
-</li>
-<li>
-<span class="list-bullet">5</span>
-<span>
-<span class="list-strong">Monitorar conexões, tokens e estabilidade.</span><br>
-Scripts de diagnóstico e ferramentas internas ajudam a garantir que o sistema esteja sempre saudável e pronto para operar.
-</span>
-</li>
-</ul>
-</div>
-<div class="card">
-<div class="card-tag">O que você terá na prática</div>
-<ul class="list">
-<li>
-<span class="list-bullet">✓</span>
-<span>Painel completo em Django para gestão diária da operação.</span>
-</li>
-<li>
-<span class="list-bullet">✓</span>
-<span>Ferramentas internas para ver status de corridas, pagamentos e alertas.</span>
-</li>
-<li>
-<span class="list-bullet">✓</span>
-<span>Base pronta para criar relatórios financeiros mais avançados se desejar.</span>
-</li>
-<li>
-<span class="list-bullet">✓</span>
-<span>Flexibilidade total para adaptar regras de negócio e percentuais.</span>
-</li>
-</ul>
-<div class="feature-chip-row">
-<span class="chip">Dashboard com foco em operação, não apenas em relatórios</span>
-<span class="chip">Ferramentas para diagnóstico rápido de problemas</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="section" id="modelo-negocio" data-section-id="modelo-negocio">
-<div class="container">
-<div class="section-header">
-<div>
-<div class="section-title">Modelo de negócio e condições da concessão</div>
-<p class="section-kicker">
-Condições claras, alinhadas para que você maximize seu lucro enquanto eu continuo garantindo a evolução técnica da plataforma.
-</p>
-</div>
-<span class="pill">
-<span class="pill-dot"></span>
-Você não divide a gestão, apenas uma pequena parte do faturamento
-</span>
-</div>
-<div class="two-column">
-<div class="pricing-box">
-<div class="pricing-label">Investimento inicial</div>
-<div class="pricing-value">R$ 35.000<span>licença completa da plataforma</span></div>
-<p class="pricing-note">
-Esse valor garante o acesso a toda a estrutura do app (backend, apps e painel) já pronta para operação e expansão.
-</p>
-<div class="pricing-grid">
-<div class="pricing-item">
-<b>Participação no faturamento</b>
-<span>Você pode ajustar a porcentagem de ganho por corrida, entrega ou serviço. Eu permaneço com apenas <strong>2% do faturamento mensal</strong> como criador e responsável técnico.</span>
-</div>
-<div class="pricing-item">
-<b>Liberdade de precificação</b>
-<span>Defina suas tarifas, taxas de serviço, parcerias, campanhas promocionais e modalidades extras conforme sua estratégia.</span>
-</div>
-<div class="pricing-item">
-<b>Escalabilidade</b>
-<span>Operação preparada para crescer para novas cidades e nichos, aproveitando a mesma base tecnológica.</span>
-</div>
-<div class="pricing-item">
-<b>Suporte estratégico</b>
-<span>Contato direto comigo para entender o sistema, alinhar ajustes iniciais e garantir uma transição suave.</span>
-</div>
-</div>
-</div>
-<div class="card">
-<div class="card-tag">Gatilhos que tornam essa compra difícil de ignorar</div>
-<ul class="list">
-<li>
-<span class="list-bullet">⏱</span>
-<span><span class="list-strong">Tempo</span>: você economiza meses (ou anos) de desenvolvimento, testes, correções e integração de pagamentos.</span>
-</li>
-<li>
-<span class="list-bullet">💰</span>
-<span><span class="list-strong">Custo</span>: o investimento é menor do que contratar uma equipe mínima de desenvolvimento por poucos meses.</span>
-</li>
-<li>
-<span class="list-bullet">🚀</span>
-<span><span class="list-strong">Velocidade</span>: em vez de esperar o app ficar pronto, você começa a focar em vendas, parcerias e marketing imediatamente.</span>
-</li>
-<li>
-<span class="list-bullet">📈</span>
-<span><span class="list-strong">Escala</span>: o sistema já nasce com múltiplas modalidades e uma modalidade de Chat Social que abre novas linhas de receita.</span>
-</li>
-<li>
-<span class="list-bullet">🔒</span>
-<span><span class="list-strong">Segurança</span>: arquitetura pensada com tokens, rate limiting, moderação de chat e práticas sólidas de backend.</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="card" style="margin-top: 22px;">
-<div class="card-tag">Projeção de faturamento em cenário de maturidade</div>
-<ul class="list">
-<li>
-<span class="list-bullet">📌</span>
-<span><span class="list-strong">Volume diário</span>: cerca de 300 corridas e entregas por dia somando todas as modalidades (carro, moto, entregas, frete leve e uso recorrente do chat 138 para atrair mais movimentação).</span>
-</li>
-<li>
-<span class="list-bullet">💳</span>
-<span><span class="list-strong">Ticket médio</span>: considerando um valor médio de R$ 22 por corrida/entrega ao longo do mês.</span>
-</li>
-<li>
-<span class="list-bullet">🗓</span>
-<span><span class="list-strong">Mês cheio</span>: mantendo esse ritmo em 30 dias, o volume movimentado pela plataforma gira em torno de <strong>R$ 200.000 por mês</strong> em corridas e entregas.</span>
-</li>
-<li>
-<span class="list-bullet">💼</span>
-<span><span class="list-strong">Sua fatia</span>: quanto disso fica no seu bolso depende da porcentagem que você definir como taxa da Multimobi. Com, por exemplo, 20% de taxa, sua parte nesse cenário de maturidade seria em torno de R$ 40.000 por mês, além de oportunidades extras com parcerias e anúncios.</span>
-</li>
-<li>
-<span class="list-bullet">⚖️</span>
-<span><span class="list-strong">Importante</span>: esses números são uma projeção de longo prazo baseada em uso consistente e crescimento da base. O desempenho real depende da sua execução comercial, campanhas locais e construção da comunidade.</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section class="section" id="controle-fluxo" data-section-id="controle-fluxo">
-<div class="container">
-<div class="section-header">
-<div>
-<div class="section-title">Controle de fluxo: entenda onde o interesse cai</div>
-<p class="section-kicker">
-Além de vender, essa página foi construída para <strong>medir o comportamento</strong> de cada visitante ao longo do funil.
-</p>
-</div>
-<span class="pill">
-<span class="pill-dot"></span>
-Eventos de funil prontos para você conectar ao seu analytics
-</span>
-</div>
-<div class="two-column">
-<div>
-<p class="section-kicker" style="margin-bottom: 10px;">
-Os principais pontos de atenção da página disparam eventos de fluxo, permitindo que você acompanhe:
-</p>
-<ul class="list">
-<li>
-<span class="list-bullet">👁</span>
-<span>Quem só viu o topo (curiosidade inicial, sem aprofundamento).</span>
-</li>
-<li>
-<span class="list-bullet">📚</span>
-<span>Quem entendeu o funcionamento e leu as modalidades.</span>
-</li>
-<li>
-<span class="list-bullet">📊</span>
-<span>Quem chegou a analisar o modelo de negócio e condições.</span>
-</li>
-<li>
-<span class="list-bullet">📲</span>
-<span>Quem clicou realmente para falar com você no WhatsApp.</span>
-</li>
-</ul>
-</div>
-<div class="card">
-<div class="card-tag">Como funciona o rastreamento técnico</div>
-<p class="card-body">
-Esta página registra eventos em um objeto de funil no navegador e envia tentativas de registro para uma URL configurável. Você pode:
-</p>
-<ul class="list">
-<li>
-<span class="list-bullet">1</span>
-<span>Configurar sua ferramenta de analytics (Google Analytics, Plausible, etc.).</span>
-</li>
-<li>
-<span class="list-bullet">2</span>
-<span>Ajustar a URL de coleta para uma função serverless no Netlify.</span>
-</li>
-<li>
-<span class="list-bullet">3</span>
-<span>Observar em qual seção as pessoas travam antes de clicar no WhatsApp.</span>
-</li>
-</ul>
-<div class="feature-chip-row">
-<span class="chip">Registro local em window.funnelEvents</span>
-<span class="chip">Eventos por seção e por clique de CTA</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="section" id="faq" data-section-id="faq">
-<div class="container">
-<div class="section-header">
-<div>
-<div class="section-title">Perguntas diretas, respostas objetivas</div>
-<p class="section-kicker">
-Empreendedor sério precisa de clareza. Aqui estão as principais respostas antes de você me chamar no WhatsApp.
-</p>
-</div>
-<span class="pill">
-<span class="pill-dot"></span>
-Última etapa de convencimento antes do contato direto
-</span>
-</div>
-<div class="faq">
-<div class="faq-item">
-<div class="faq-question">Vou ter acesso total ao dashboard e à parte administrativa?</div>
-<div class="faq-answer">
-Sim. A concessão inclui acesso completo ao painel administrativo, onde você pode analisar receitas, ver corridas e entregas, gerenciar usuários e motoboys, adicionar parceiros e enviar avisos segmentados.
-</div>
-</div>
-<div class="faq-item">
-<div class="faq-question">Posso ajustar as porcentagens que quero ganhar?</div>
-<div class="faq-answer">
-Sim. Você define quanto quer ganhar por corrida, entrega ou parceria. A única condição fixa é a minha participação de <strong>2% do faturamento mensal</strong> como desenvolvedor e mantenedor da base tecnológica.
-</div>
-</div>
-<div class="faq-item">
-<div class="faq-question">O Chat Social 138 é realmente uma cortesia? Como isso me ajuda?</div>
-<div class="faq-answer">
-Sim, o Chat 138 é uma cortesia pensada para aumentar engajamento. Ele transforma o seu app em um ambiente social, aumentando o tempo de uso, a retenção e abrindo espaço para monetização com comunidades, eventos, planos VIP e publicidade.
-</div>
-</div>
-<div class="faq-item">
-<div class="faq-question">O que eu preciso para colocar tudo no ar?</div>
-<div class="faq-answer">
-Basicamente: um servidor para o backend, contas nas lojas de aplicativos, configurações de domínio e a publicação dessa landing page no Netlify ou similar. A partir daí, o foco é construir sua base de usuários, motoboys e parceiros.
-</div>
-</div>
-<div class="faq-item">
-<div class="faq-question">Depois da compra, como será nosso contato?</div>
-<div class="faq-answer">
-O primeiro contato é direto por WhatsApp, onde alinhamos detalhes, combinamos ajustes iniciais e esclarecemos qualquer ponto técnico. A partir daí, você passa a comandar o negócio e eu permaneço como apoio técnico e parceiro nos 2% do faturamento.
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="section" id="cta-final" data-section-id="cta-final">
-<div class="container">
-<div class="two-column">
 <div class="cta-panel">
-<h2 class="cta-title">Se você entendeu o potencial, o próximo passo é simples</h2>
-<p class="cta-text">
-Você já viu as modalidades, o Chat Social 138, o dashboard e o modelo de negócio. A decisão agora é se você quer continuar só observando o mercado ou assumir o controle de uma plataforma completa, pronta para operar e crescer.
-</p>
+<div class="cta-title">Vamos conversar sobre essa sociedade?</div>
+<div class="cta-text">
+Se você tem perfil empreendedor e quer trazer essa inovação para sua cidade, me chame no WhatsApp. Vamos alinhar os detalhes e começar.
+</div>
 <div class="cta-buttons">
-<button class="btn-whatsapp" id="cta-final-whatsapp">
-<span class="whatsapp-icon">W</span>
-<span>Chamar no WhatsApp para mais informações</span>
+<button class="btn-whatsapp" onclick="window.open('https://wa.me/55SEUNUMERO', '_blank')">
+<span class="whatsapp-icon">📞</span>
+<span>Falar com o Desenvolvedor</span>
 </button>
-<button class="btn-outline" data-scroll-target="#como-funciona">
-Rever funcionamento da plataforma
-</button>
-</div>
-<p class="cta-sub">
-Quando você clicar no botão acima, vai falar diretamente comigo. Sem intermediários, sem discurso genérico. Vamos falar de números, estratégia e próximos passos.
-</p>
-</div>
-<div>
-<ul class="list">
-<li>
-<span class="list-bullet">✓</span>
-<span>Plataforma com múltiplas modalidades (corridas, entregas e Chat Social 138).</span>
-</li>
-<li>
-<span class="list-bullet">✓</span>
-<span>Dashboard completo para gestão de usuários, parceiros e receitas.</span>
-</li>
-<li>
-<span class="list-bullet">✓</span>
-<span>Modelo de negócio claro: investimento único + 2% de faturamento para o criador.</span>
-</li>
-<li>
-<span class="list-bullet">✓</span>
-<span>Rastreamento de fluxo para entender onde o visitante perde o interesse.</span>
-</li>
-<li>
-<span class="list-bullet">✓</span>
-<span>Base técnica sólida em Django, WebSocket, tokens e integrações.</span>
-</li>
-</ul>
 </div>
 </div>
 </div>
 </section>
 </main>
+
 <footer class="footer">
-<div>Multimobi • Plataforma de mobilidade, entregas e chat social para empreendedores.</div>
-<div>
-<span>Landing pronta para deploy no Netlify. </span>
-<a href="#controle-fluxo">Ver detalhes do controle de fluxo</a>
+<div class="container" style="display: flex; justify-content: space-between; width: 100%;">
+<div>© 2024 Multimobi Plataforma. Todos os direitos reservados.</div>
+<div>Tecnologia de ponta para mobilidade urbana.</div>
 </div>
 </footer>
 </div>
-<script>
-(function () {
-  var funnelEvents = [];
-  var sentSections = new Set();
-  var whatsappNumber = "5551999906748";
-  var analyticsEndpoint = null;
-  function recordEvent(type, payload) {
-    var timestamp = new Date().toISOString();
-    var event = {
-      type: type,
-      payload: payload || {},
-      timestamp: timestamp
-    };
-    funnelEvents.push(event);
-    if (typeof window !== "undefined") {
-      window.funnelEvents = funnelEvents;
-    }
-    trySendToEndpoint(event);
-    if (typeof gtag === "function") {
-      gtag("event", type, payload || {});
-    }
-  }
-  function trySendToEndpoint(event) {
-    if (!analyticsEndpoint || typeof fetch !== "function") return;
-    try {
-      fetch(analyticsEndpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(event)
-      }).catch(function () {});
-    } catch (e) {}
-  }
-  function handleSectionView(sectionId) {
-    if (sentSections.has(sectionId)) return;
-    sentSections.add(sectionId);
-    recordEvent("section_view", { sectionId: sectionId });
-  }
-  function setupSectionObservers() {
-    var sections = document.querySelectorAll("[data-section-id]");
-    if (!("IntersectionObserver" in window)) {
-      sections.forEach(function (section) {
-        handleSectionView(section.getAttribute("data-section-id"));
-      });
-      return;
-    }
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
-          var id = entry.target.getAttribute("data-section-id");
-          handleSectionView(id);
-        }
-      });
-    }, {
-      threshold: [0.35]
-    });
-    sections.forEach(function (section) {
-      observer.observe(section);
-    });
-  }
-  function openWhatsApp(source) {
-    recordEvent("whatsapp_click", { source: source });
-    if (!whatsappNumber || whatsappNumber === "SEU_NUMERO_WHATSAPP_AQUI") {
-      console.warn("Configure o número do WhatsApp na variável whatsappNumber.");
-      return;
-    }
-    var texto = encodeURIComponent("Olá, vi a página da plataforma Multimobi e quero falar sobre a concessão.");
-    var url = "https://wa.me/" + whatsappNumber + "?text=" + texto;
-    window.open(url, "_blank", "noopener");
-  }
-  function setupButtons() {
-    var heroCta = document.getElementById("cta-hero-whatsapp");
-    var finalCta = document.getElementById("cta-final-whatsapp");
-    if (heroCta) {
-      heroCta.addEventListener("click", function () {
-        openWhatsApp("hero");
-      });
-    }
-    if (finalCta) {
-      finalCta.addEventListener("click", function () {
-        openWhatsApp("cta-final");
-      });
-    }
-    var scrollButtons = document.querySelectorAll("[data-scroll-target]");
-    scrollButtons.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var target = btn.getAttribute("data-scroll-target");
-        if (!target) return;
-        var el = document.querySelector(target);
-        if (!el) return;
-        recordEvent("scroll_cta_click", { target: target });
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    });
-  }
-  function setupScrollDepthTracking() {
-    var checkpoints = [25, 50, 75, 90];
-    var hit = {};
-    checkpoints.forEach(function (c) {
-      hit[c] = false;
-    });
-    window.addEventListener("scroll", function () {
-      var scrollTop = window.scrollY || document.documentElement.scrollTop;
-      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (docHeight <= 0) return;
-      var current = Math.round(scrollTop / docHeight * 100);
-      checkpoints.forEach(function (cp) {
-        if (!hit[cp] && current >= cp) {
-          hit[cp] = true;
-          recordEvent("scroll_depth", { percentage: cp });
-        }
-      });
-    });
-  }
-  window.addEventListener("load", function () {
-    recordEvent("page_load", { path: window.location.pathname });
-    setupSectionObservers();
-    setupButtons();
-    setupScrollDepthTracking();
-  });
-})();
-</script>
 </body>
 </html>
 
